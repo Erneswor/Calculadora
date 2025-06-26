@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
+    tools:context=".MainActivity">
+
+    <!-- Display de resultados optimizado para medium phone -->
+    <TextView
+        android:id="@+id/textviewres"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:background="#F80808"
+        android:ellipsize="start"
+        android:gravity="center_vertical|end"
+        android:maxLines="2"
+        android:padding="20dp"
+        android:textColor="#FFF1F1"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Tabla de botones optimizada con ImageButton -->
+    <TableLayout
+        android:id="@+id/tabla_botones"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:stretchColumns="*"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/textviewres"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Fila 1 -->
+        <TableRow android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/btn_ac"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground"
+
+                app:srcCompat="@drawable/ac" />
+            <ImageButton
+                android:id="@+id/btn_porcentaje"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground"
+
+                app:srcCompat="@drawable/porcentaje" />
+            <ImageButton
+                android:id="@+id/btn_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground"
+
+                app:srcCompat="@drawable/delete" />
+            <ImageButton
+                android:id="@+id/btn_dividir"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground"
+
+                app:srcCompat="@drawable/dividir" />
+        </TableRow>
+
+        <!-- Fila 2 -->
+        <TableRow android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/btn_siete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground"
+
+                app:srcCompat="@drawable/siete" />
+            <ImageButton
+                android:id="@+id/btn_ocho"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground"
+
+                app:srcCompat="@drawable/ocho" />
+            <ImageButton
+                android:id="@+id/btn_nueve"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground"
+
+                app:srcCompat="@drawable/nueve" />
+            <ImageButton
+                android:id="@+id/btn_multiplicar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground"
+
+                app:srcCompat="@drawable/multiplicacion" />
+        </TableRow>
+
+        <!-- Fila 3 -->
+        <TableRow android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/btn_cuatro"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground"
+
+                app:srcCompat="@drawable/cuatro" />
+            <ImageButton
+                android:id="@+id/btn_cinco"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground"
+
+                app:srcCompat="@drawable/cinco" />
+            <ImageButton
+                android:id="@+id/btn_seis"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground"
+
+                app:srcCompat="@drawable/seis" />
+            <ImageButton
+                android:id="@+id/btn_resta"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground"
+
+                app:srcCompat="@drawable/resta" />
+        </TableRow>
+
+        <!-- Fila 4 -->
+        <TableRow android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/btn_uno"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground"
+
+                app:srcCompat="@drawable/uno" />
+            <ImageButton
+                android:id="@+id/btn_dos"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground"
+
+                app:srcCompat="@drawable/dos" />
+            <ImageButton
+                android:id="@+id/btn_tres"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground"
+
+                app:srcCompat="@drawable/tres" />
+            <ImageButton
+                android:id="@+id/btn_suma"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground"
+
+                app:srcCompat="@drawable/suma" />
+        </TableRow>
+
+        <!-- Fila 5 -->
+        <TableRow android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/btn_doble_cero"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground"
+
+                app:srcCompat="@drawable/doble_cero" />
+            <ImageButton
+                android:id="@+id/btn_cero"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground"
+
+                app:srcCompat="@drawable/cero" />
+            <ImageButton
+                android:id="@+id/btn_punto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground"
+
+                app:srcCompat="@drawable/punto" />
+            <ImageButton
+                android:id="@+id/btn_igual"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground"
+
+                app:srcCompat="@drawable/igual" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
