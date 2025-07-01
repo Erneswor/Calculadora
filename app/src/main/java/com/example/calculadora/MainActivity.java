@@ -10,7 +10,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-
 public class MainActivity extends AppCompatActivity {
 
     /*
@@ -269,6 +268,26 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
 
+            for (int i = 0; i < operadores.size(); i++) {
+                char op = operadores.get(i);
+                if (op == '%') {
+                    if (i + 1 < numeros.size()) {
+
+                        double a = numeros.get(i);
+                        double b = numeros.get(i + 1);
+                        double resultado = a % b;
+                        numeros.set(i, resultado);
+                        numeros.remove(i + 1);
+                    } else {
+                        double a = numeros.get(i);
+                        double resultado = a / 100.0;
+                        numeros.set(i, resultado);
+                    }
+                    operadores.remove(i);
+                    i--;
+                }
+            }
+
             // Revisamos suma y resta
             double total = numeros.get(0);
             for (int i = 0; i < operadores.size(); i++) {
@@ -280,21 +299,6 @@ public class MainActivity extends AppCompatActivity {
                     total -= b;
                 }
             }
-
-
-            for (int i = 0; i < operadores.size(); i++) {
-                char op = operadores.get(i);
-                if (op == '%') {
-                    double a = numeros.get(i);
-                    double resultado = a / 100.0;
-
-                    numeros.set(i, resultado);
-                    numeros.remove(i + 1);
-                    operadores.remove(i);
-                    i--;
-                }
-            }
-
 
             return total;
         } catch (Exception e) {

@@ -45,6 +45,20 @@
 
         <!-- Fila 1 -->
         <TableRow android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/btn_porcentaje"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:importantForAccessibility="no"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+
+                app:srcCompat="@drawable/porcentaje" />
+
             <ImageButton
                 android:id="@+id/btn_ac"
                 android:layout_width="0dp"
@@ -57,18 +71,7 @@
                 android:background="?android:attr/selectableItemBackground"
 
                 app:srcCompat="@drawable/ac" />
-            <ImageButton
-                android:id="@+id/btn_porcentaje"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="3dp"
-                android:importantForAccessibility="no"
-                android:scaleType="fitCenter"
-                android:padding="8dp"
-                android:background="?android:attr/selectableItemBackground"
 
-                app:srcCompat="@drawable/porcentaje" />
             <ImageButton
                 android:id="@+id/btn_delete"
                 android:layout_width="0dp"
